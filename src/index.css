@@ -1,5 +1,52 @@
-body {
+html, body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.component.first-component {
+  background-color: #1E1C1C;
+  display: flex;
+
+}
+
+.component.second-component {
+  background-color: red;
+}
+
+.component.third-component {
+  background-color: blue;
+}
+
+.component.fourth-component {
+  background-color: yellow;
+}
+
+.component.fifth-component {
+  background-color: purple;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-additional-class > li > a, .pagination-additional-class > li > span {
+  margin-right: 50px;
 }
