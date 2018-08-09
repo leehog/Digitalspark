@@ -1,5 +1,61 @@
-body {
+html, body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+/*-- Landing page -- */
+.component.first-component {
+  background-color: #1E1C1C;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page-content {
+  margin-top: 40vh;
+  color: white;
+  padding: 10px;
+}
+.landing-page-content .underline {
+  height: 1px;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.company-name {
+  font-size: 54px;
+}
+.landing-btn {
+  background-color: #179FE8;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+.landing-btn-wrap {
+  justify-content: center;
+}
+/* -- -- */
+.component.second-component {
+  background-color: red;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-additional-class > li > a, .pagination-additional-class > li > span {
+  margin-right: 50px;
 }
