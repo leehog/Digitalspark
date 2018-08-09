@@ -11,8 +11,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Link activeClass="active" className="test1" to="first-component" spy={true} smooth={true} duration={500} >Start</Link>
-      <Link activeClass="active" className="test1" to="second-component" spy={true} smooth={true} duration={500} >About us</Link>
+      <Link activeClass="active" className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} >Start</Link>
+      <Link activeClass="active" className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} >About us</Link>
 
       <React.Fragment>
                 <FirstComponent/>

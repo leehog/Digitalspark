@@ -12,6 +12,8 @@ html, body {
 }
 /*-- Landing page -- */
 .component.first-component {
+  background-image: url("BI9B5145.jpg");
+  background-size: cover;
   background-color: #1E1C1C;
   display: flex;
   justify-content: center;
