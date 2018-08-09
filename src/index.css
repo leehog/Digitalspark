@@ -10,32 +10,41 @@ html, body {
   width: 100%;
   display: flex;
 }
-
+/*-- Landing page -- */
 .component.first-component {
   background-color: #1E1C1C;
   display: flex;
-
+  justify-content: center;
 }
 
+.landing-page-content {
+  margin-top: 40vh;
+  color: white;
+  padding: 10px;
+}
+.landing-page-content .underline {
+  height: 1px;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.company-name {
+  font-size: 54px;
+}
+.landing-btn {
+  background-color: #179FE8;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+.landing-btn-wrap {
+  justify-content: center;
+}
+/* -- -- */
 .component.second-component {
   background-color: red;
-}
-
-.component.third-component {
-  background-color: blue;
-}
-
-.component.fourth-component {
-  background-color: yellow;
-}
-
-.component.fifth-component {
-  background-color: purple;
-}
-
-h2 {
-  margin: auto;
-  text-align: center;
 }
 
 .pagination-additional-class {
