@@ -90,6 +90,35 @@ html, body {
   max-width: 175px;
 }
 /* -- -- */
+
+/* -- Our consultants page -- */
+.component.fourth-component {
+  background-color: #e1e1e1;
+  padding: 75px 10px;
+}
+.consult-title {
+  padding-bottom: 50px;
+}
+.card-block {
+  background-color: #e1e1e1;
+  padding: 15px;
+  text-align: left;
+}
+.card-deck {
+  margin: 0 auto;
+}
+.join-us {
+  padding-top: 50px;
+}
+.tt-btn {
+  background-color: #caba32;
+  padding: 20px 55px;
+  border-radius: 45px;
+  max-width: 350px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/* -- -- */
 .pagination-additional-class {
   margin: 0;
   position: fixed;
