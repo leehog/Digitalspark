@@ -64,7 +64,32 @@ html, body {
   font-size: 18px;
 }
 /* -- -- */
-
+/* -- Jobs page -- */
+.component.third-component {
+  padding: 75px 10px;
+  background-color: #242424;
+}
+.job-wrap {
+  padding: 35px 10px; 
+  max-width: 1150px !important;
+  margin: 0 auto;
+}
+.job-title {
+  color: #747474;
+  text-align: left !important;
+}
+.job-desc {
+  color: #c9c9c9;
+  text-align: left !important;
+}
+.read-more-btn {
+  background-color: #179FE8;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 45px;
+  max-width: 175px;
+}
+/* -- -- */
 .pagination-additional-class {
   margin: 0;
   position: fixed;
