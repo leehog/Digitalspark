@@ -100,7 +100,7 @@ html, body {
   padding-bottom: 50px;
 }
 .card-block {
-  background-color: #e1e1e1;
+  background-color: #eeeeee;
   padding: 15px;
   text-align: left;
 }
@@ -131,10 +131,12 @@ html, body {
 /* -- --*/
 /* -- Footer --*/
 .footer {
+  background-color: #179FE8;
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 45px 20px;
+  color: white;
 }
 .footer .scroll-link{
   font-size: 25px;
