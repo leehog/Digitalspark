@@ -93,7 +93,7 @@ html, body {
 
 /* -- Our consultants page -- */
 .component.fourth-component {
-  background-color: #e1e1e1;
+  background-color: #eeeeee;
   padding: 75px 10px;
 }
 .consult-title {
@@ -117,6 +117,27 @@ html, body {
   max-width: 350px;
   margin: 0 auto;
   cursor: pointer;
+}
+/* -- -- */
+/* -- Contact page -- */
+.component.fifth-component {
+  background-color: #e1e1e1;
+  padding: 75px 10px;
+}
+.contact-borders {
+  border-left: 1px solid #caba32;
+  border-right: 1px solid #caba32;
+}
+/* -- --*/
+/* -- Footer --*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 45px 20px;
+}
+.footer .scroll-link{
+  font-size: 25px;
 }
 /* -- -- */
 .pagination-additional-class {
