@@ -29,11 +29,7 @@ class App extends Component {
                 <FifthComponent/>
         </React.Fragment>
         <div className="footer">
-           <Link activeClass="active" className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} >Start</Link>
-           <Link activeClass="active" className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} >About us</Link>
-           <Link activeClass="active" className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} >Vad vi gör?</Link>
-           <Link activeClass="active" className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} >Our Consultants</Link>
-           <Link activeClass="active" className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} >Contact</Link>
+            
         </div>
       </div>
     );
