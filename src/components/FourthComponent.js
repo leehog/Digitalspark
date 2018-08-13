@@ -11,7 +11,7 @@ export default () => {
                           <img class="card-img-top" src="//placehold.it/450x450" alt="Card image cap"></img>
                           <div class="card-block">
                           <h4 class="card-title">Leo</h4>
-                          <p class="card-text">Frontend utvecklare</p>
+                          <p class="card-text">Frontend developer</p>
                           <p class="card-text"><small class="text-muted">Vue JS, React</small></p>
                           </div>
                       </div>
@@ -19,7 +19,7 @@ export default () => {
                           <img class="card-img-top" src="//placehold.it/450x450" alt="Card image cap"></img>
                           <div class="card-block">
                           <h4 class="card-title">Sebastian</h4>
-                          <p class="card-text">Frontend utvecklare</p>
+                          <p class="card-text">Frontend developer</p>
                           <p class="card-text"><small class="text-muted">React, Redux, Angular</small></p>
                           </div>
                       </div>
@@ -27,7 +27,7 @@ export default () => {
                           <img class="card-img-top" src="//placehold.it/450x450" alt="Card image cap"></img>
                           <div class="card-block">
                           <h4 class="card-title">Markus</h4>
-                          <p class="card-text">Fullstack utvecklare</p>
+                          <p class="card-text">Fullstack developer</p>
                           <p class="card-text"><small class="text-muted">ASP.net, C#, React</small></p>
                           </div>
                       </div>
