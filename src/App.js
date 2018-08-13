@@ -12,15 +12,20 @@ import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } 
 
 class App extends Component {
 
+  state = {
+    isOpen: false,
+  }
   render() {
     return (
       <div className="App">
-      <Link activeClass="active" className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} >Start</Link>
-      <Link activeClass="active" className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} >About us</Link>
-      <Link activeClass="active" className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} >Vad vi gör?</Link>
-      <Link activeClass="active" className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} >Our Consultants</Link>
-      <Link activeClass="active" className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} >Contact</Link>
-
+      <div className={this.state.isOpen ? "sticky-nav open" : "sticky-nav closed"}>
+      <Link activeClass="active" className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} offset={-64} >Start</Link>
+      <Link activeClass="active" className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} offset={-64}>About us</Link>
+      <Link activeClass="active" className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} offset={-64}>Vad vi gör?</Link>
+      <Link activeClass="active" className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} offset={-64}>Our Consultants</Link>
+      <Link activeClass="active" className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} offset={-64}>Contact</Link>
+      <div className="hamburger" onClick={ () => this.setState({isOpen: !this.state.isOpen}) }>=</div>
+      </div>
       <React.Fragment>
                 <FirstComponent/>
                 <SecondComponent/>

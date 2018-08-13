@@ -10,6 +10,52 @@ html, body {
   width: 100%;
   display: flex;
 }
+
+.sticky-nav {
+  background-color: #242424;
+  padding: 20px 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  color: #caba32;
+  display: flex;
+  flex-direction: row;
+}
+.hamburger {
+  position: absolute;
+  top: 20px;
+  background-color: red;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: none;
+  cursor: pointer;
+}
+.closed {
+  max-height: 64px;
+}
+.open { 
+  max-height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .sticky-nav {
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 70px;
+  }
+  .scroll-link {
+    margin-top: 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+.scroll-link {
+  padding: 5px 20px;
+  cursor: pointer;
+}
 /*-- Landing page -- */
 .component.first-component {
   background-image: url("BI9B5145.jpg");
