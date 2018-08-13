@@ -10,6 +10,58 @@ html, body {
   width: 100%;
   display: flex;
 }
+
+.sticky-nav {
+  background-color: #242424;
+  padding: 20px 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  color: #caba32;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 8px 2px #000000;
+}
+.hamburger {
+  position: absolute;
+  top: 20px;
+  background-color: #242424;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: none;
+  cursor: pointer;
+}
+.closed {
+  max-height: 74px;
+}
+.open { 
+  max-height: auto;
+  background-color: #242424 !important;
+  box-shadow: 0px 0px 8px 2px #000000;
+}
+
+@media screen and (max-width: 650px) {
+  .sticky-nav {
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 70px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .scroll-link {
+    margin-top: 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+.scroll-link {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
 /*-- Landing page -- */
 .component.first-component {
   background-image: url("BI9B5145.jpg");
@@ -54,6 +106,9 @@ html, body {
 .about-img {
   width: 100%;
 }
+.component.second-component .about-title {
+  text-align: left;
+}
 .about-title {
   font-size: 54px;
   padding-bottom: 35px;
@@ -88,6 +143,11 @@ html, body {
   cursor: pointer;
   border-radius: 45px;
   max-width: 175px;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+.read-more-btn:hover {
+  background-color: #6CC0ED;
 }
 /* -- -- */
 
@@ -117,6 +177,10 @@ html, body {
   max-width: 350px;
   margin: 0 auto;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.tt-btn:hover {
+  background-color: #E2D458;
 }
 /* -- -- */
 /* -- Contact page -- */
@@ -127,6 +191,18 @@ html, body {
 .contact-borders {
   border-left: 1px solid #caba32;
   border-right: 1px solid #caba32;
+}
+@media screen and (max-width: 767px) {
+  .contact-borders {
+    border-left: none;
+    border-right: none;
+  }  
+  .contact-info {
+    margin-top: 25px;
+  }
+  .component.fifth-component {
+    padding: 45px 10px;
+  }
 }
 /* -- --*/
 /* -- Footer --*/
@@ -140,6 +216,11 @@ html, body {
 }
 .footer .scroll-link{
   font-size: 25px;
+}
+.social {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 /* -- -- */
 .pagination-additional-class {
