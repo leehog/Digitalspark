@@ -4,7 +4,7 @@ export default () => {
     return (
         <div className="component third-component">
             <div className="container-fluid">
-                <h1 className="about-title">Open positions</h1>
+                <h1 className="about-title">OPEN POSITIONS</h1>
                 <div className="col-lg-12 job-wrap">
                     <h2 className="job-title">IT Consultant</h2>
                     <p className="job-desc">As a consultant you will collaborate with top talented colleagues together with market leading clients. 
@@ -14,7 +14,7 @@ export default () => {
                      access to knowledge from Digitalspark consultants and customer projects within fields 
                      such as Mobile development, Frontend development, Backend development, Machine Learning,  and Architecture. 
                     </p>
-                    <div className="read-more-btn">Read more</div>
+                    <a target="_blank" href ="https://careers.digitalspark.se/jobs/114864-it-consultant-developer" className="linkTo"><div className="read-more-btn">Read more</div></a>
                 </div>
                 <div className="col-lg-12 job-wrap">
                 <h2 className="job-title">Head of Sales</h2>
@@ -24,7 +24,7 @@ export default () => {
                    and who is eager to build something new with great colleagues. <br></br>
                    We offer an opportunity to join and build a winning business - where you become a key person in the company. 
                     </p>
-                    <div className="read-more-btn">Read more</div>
+                    <a target="_blank" href ="https://careers.digitalspark.se/jobs/114862-head-of-sales" className="linkTo"><div className="read-more-btn">Read more</div></a>
                 </div>
                 <div className="col-lg-12 job-wrap">
                 <h2 className="job-title">Sourcing manager</h2>
@@ -35,7 +35,7 @@ export default () => {
                 contact areas with customers and consultants.<br></br>
                 We offer an opportunity to join and build a growing business where you will become a key person in the company.
                     </p>
-                    <div className="read-more-btn">Read more</div>
+                    <a target="_blank" href ="https://careers.digitalspark.se/jobs/114866-sourcing-manager" className="linkTo"><div className="read-more-btn">Read more</div></a>
                 </div>
 
             </div>

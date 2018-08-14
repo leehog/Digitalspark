@@ -2,7 +2,8 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: #1E1C1C;
 }
 
 .component {
@@ -32,6 +33,10 @@ html, body {
   display: none;
   cursor: pointer;
 }
+.hamburger img {
+  width: 44px;
+  height: 44px;
+}
 .closed {
   max-height: 74px;
 }
@@ -39,6 +44,33 @@ html, body {
   max-height: auto;
   background-color: #242424 !important;
   box-shadow: 0px 0px 8px 2px #000000;
+}
+.linkTo {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
+  max-width: 175px;
+  display: block;
+}
+.linkToSecond {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.linkToSecond:hover{
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
+}
+
+.linkTo:hover {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: white;
 }
 
 @media screen and (max-width: 650px) {
@@ -97,6 +129,10 @@ html, body {
 .landing-btn-wrap {
   justify-content: center;
 }
+.landing-btn:hover {
+  background-color: #6CC0ED;
+}
+
 /* -- -- */
 /* -- About page -- */
 .component.second-component {
@@ -110,7 +146,7 @@ html, body {
   text-align: left;
 }
 .about-title {
-  font-size: 54px;
+  font-size: 44px;
   padding-bottom: 35px;
   color: #caba32;
 }
@@ -207,7 +243,7 @@ html, body {
 /* -- --*/
 /* -- Footer --*/
 .footer {
-  background-color: #179FE8;
+  background-color: #242424;
   display: flex;
   flex-direction: column;
   text-align: left;
