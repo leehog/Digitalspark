@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
+import ServiceComponent from "./components/Services";
 import ThirdComponent from "./components/ThirdComponent";
 import FourthComponent from "./components/FourthComponent";
 import FifthComponent from "./components/FifthComponent";
@@ -32,6 +33,7 @@ class App extends Component {
       <React.Fragment>
                 <FirstComponent/>
                 <SecondComponent/>
+                <ServiceComponent/>
                 <ThirdComponent/>
                 <FourthComponent/>
                 <FifthComponent/>

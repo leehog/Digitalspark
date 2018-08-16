@@ -2,7 +2,6 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Quicksand', sans-serif !important;
   background-color: #1E1C1C;
 }
 
@@ -10,6 +9,11 @@ html, body {
   height: 100%;
   width: 100%;
   display: flex;
+  font-family: 'Raleway', sans-serif;
+}
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .sticky-nav {
@@ -78,8 +82,6 @@ html, body {
     flex-direction: column;
     overflow: hidden;
     padding-top: 70px;
-    background-color: transparent;
-    box-shadow: none;
   }
   .scroll-link {
     margin-top: 10px;
@@ -92,6 +94,7 @@ html, body {
 .scroll-link {
   padding: 5px 20px;
   cursor: pointer;
+  font-family: 'Lato';
 }
 
 /*-- Landing page -- */
@@ -142,17 +145,45 @@ html, body {
 .about-img {
   width: 100%;
 }
-.component.second-component .about-title {
-  text-align: left;
+.about-title-wrap {
+  padding-bottom: 35px;
 }
 .about-title {
   font-size: 44px;
-  padding-bottom: 35px;
   color: #caba32;
 }
 .about-desc {
   text-align: left;
   font-size: 18px;
+}
+/* -- -- */
+/* -- Services -- */
+.service-start {
+  background-color: #5a9baf;
+  padding: 65px 10px;
+  color: white;
+}
+.programming {
+  background-color: #fafafa;
+  padding: 65px 10px;
+  padding-top: 0;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 35px solid #5a9baf;
+  margin: 0 auto;
+}
+.pc-icon {
+  margin-top: 75px;
+  max-width: 120px;
+}
+.service-desc {
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 /* -- -- */
 /* -- Jobs page -- */
@@ -195,13 +226,19 @@ html, body {
 .consult-title {
   padding-bottom: 50px;
 }
+.card {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none !important;
+}
 .card-block {
-  background-color: #eeeeee;
   padding: 15px;
-  text-align: left;
 }
 .card-deck {
   margin: 0 auto;
+}
+.card-img-top {
+  border-radius: 100% !important;
 }
 .join-us {
   padding-top: 50px;
