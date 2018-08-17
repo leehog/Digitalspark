@@ -16,21 +16,25 @@ html, body {
   margin: 0 !important;
 }
 
-.sticky-nav {
-  background-color: #242424;
-  padding: 20px 5px;
+.nav-wrap {
   position: fixed;
   width: 100%;
   z-index: 10000;
-  color: #caba32;
+  overflow: hidden;
+}
+.sticky-nav {
+  padding: 20px 5px;
+  color: white;
   display: flex;
   flex-direction: row;
+}
+.active-scroll {
+  background-color: #242424;
   box-shadow: 0px 0px 8px 2px #000000;
 }
 .hamburger {
   position: absolute;
   top: 20px;
-  background-color: #242424;
   right: 20px;
   width: 44px;
   height: 44px;
@@ -99,7 +103,7 @@ html, body {
 
 /*-- Landing page -- */
 .component.first-component {
-  background-image: url("BI9B5145.jpg");
+  background-image: url("stockholm.jpg");
   background-size: cover;
   background-color: #1E1C1C;
   display: flex;
@@ -141,6 +145,10 @@ html, body {
 .component.second-component {
   padding: 75px 10px;
   background-color: #e1e1e1;
+}
+.quote-text {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
 }
 .about-img {
   width: 100%;
@@ -228,7 +236,7 @@ html, body {
 }
 .card {
   margin-top: 10px;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none !important;
 }
 .card-block {

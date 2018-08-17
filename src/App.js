@@ -13,22 +13,56 @@ import menu from './menu.png'
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+/**
+ * This utility function allows function calls to be debounced.
+ * @param {Function} func Function that requires debouncing
+ * @param {Number} wait Wait time in milliseconds between successive invocations
+ */
+const debounce = (func, wait) => {
+  let timeout
+  return (...args) => {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => func.apply(this, args), wait)
+  }
+}
 
 class App extends Component {
 
   state = {
     isOpen: false,
+    scrollPositionY: 0,
   }
+  
+  componentDidMount() {
+    // 32 is the number of milliseconds to debounce
+    // I picked this because it's approx 2 frames (ie: 16.7 * 2)
+    return window.addEventListener('scroll', debounce(this.handleScroll, 32))
+  }
+
+  componentWillUnmount() {
+    return window.removeEventListener('scroll', debounce(this.handleScroll, 32))
+  }
+
+  handleScroll = () => {
+    // + is unary operator, same as Number(scrollPositionY)
+    const scrollPositionY = +window.scrollY
+    return this.setState({ scrollPositionY })
+  }
+
   render() {
+    const isScrolling = !!this.state.scrollPositionY
+
     return (
       <div className="App">
-      <div className={this.state.isOpen ? "sticky-nav open" : "sticky-nav closed"}>
+      <div className={"nav-wrap " + (this.state.isOpen ? "open" : "closed")}>
+      <div className={"sticky-nav " + ((isScrolling) ? 'active-scroll' : '')}>
       <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} offset={-74} >Start</Link>
       <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} offset={-74}>About us</Link>
       <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} offset={-74}>Services</Link>
       <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} offset={-74}>Our Consultants</Link>
       <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} offset={-74}>Contact</Link>
       <div className="hamburger" onClick={ () => this.setState({isOpen: !this.state.isOpen}) }><img src={ menu } alt="menu"></img></div>
+      </div>
       </div>
       <React.Fragment>
                 <FirstComponent/>
