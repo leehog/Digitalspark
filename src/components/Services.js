@@ -15,7 +15,7 @@ export default () => {
             <div className="programming">
             <div class="arrow-down"></div>
                 <img src={ computer } className="pc-icon"/>
-               <h1>Programming</h1>
+               <h1>PROGRAMMING</h1>
                <p className="service-desc">
                    We provide proffesional expertise in all new and demanding technologies on the market.
                    Such as Java, C#, React JS, Angular etc. We constantly strive to be active in the leading edge of system development.

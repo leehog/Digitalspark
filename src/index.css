@@ -231,7 +231,7 @@ html, body {
   background-color: #eeeeee;
   padding: 75px 10px;
 }
-.consult-title {
+.component.fourth-component .quote-text {
   padding-bottom: 50px;
 }
 .card {
@@ -247,6 +247,8 @@ html, body {
 }
 .card-img-top {
   border-radius: 100% !important;
+  max-width: 350px;
+  margin: 0 auto;
 }
 .join-us {
   padding-top: 50px;

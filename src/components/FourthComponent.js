@@ -5,6 +5,7 @@ export default () => {
         <div className="component fourth-component">
             <div className="container">
             <h1 className="consult-title">THE TEAM</h1>
+            <h3 className="text-center quote-text">"We offer only the best"</h3>
                 <div class="row">
                   <div class="card-deck">
                       <div class="card">

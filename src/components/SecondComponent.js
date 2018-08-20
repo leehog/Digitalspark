@@ -7,7 +7,7 @@ export default () => {
             <div className="container-fluid row">
             <div className="col-lg-12 col-md-12 col-sm-12 about-title-wrap">
             <h1 className="about-title">WHO WE ARE</h1>
-            <h3 className="text-center quote-text">Committed to help companies grow</h3>
+            <h3 className="text-center quote-text">"Committed to help companies grow"</h3>
             </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
                     <p className="about-desc">

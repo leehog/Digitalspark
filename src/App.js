@@ -34,13 +34,11 @@ class App extends Component {
   }
   
   componentDidMount() {
-    // 32 is the number of milliseconds to debounce
-    // I picked this because it's approx 2 frames (ie: 16.7 * 2)
-    return window.addEventListener('scroll', debounce(this.handleScroll, 32))
+    return window.addEventListener('scroll', debounce(this.handleScroll, 20))
   }
 
   componentWillUnmount() {
-    return window.removeEventListener('scroll', debounce(this.handleScroll, 32))
+    return window.removeEventListener('scroll', debounce(this.handleScroll, 20))
   }
 
   handleScroll = () => {
@@ -56,11 +54,11 @@ class App extends Component {
       <div className="App">
       <div className={"nav-wrap " + (this.state.isOpen ? "open" : "closed")}>
       <div className={"sticky-nav " + ((isScrolling) ? 'active-scroll' : '')}>
-      <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} offset={-74} >Start</Link>
-      <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} offset={-74}>About us</Link>
-      <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} offset={-74}>Services</Link>
-      <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} offset={-74}>Our Consultants</Link>
-      <Link activeClass="active" onClick={ () => this.setState({isOpen: !this.state.isOpen}) } className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} offset={-74}>Contact</Link>
+      <Link activeClass="active" onClick={ () => this.setState({isOpen: false}) } className="scroll-link" to="first-component" spy={true} smooth={true} duration={500} offset={-74} >Start</Link>
+      <Link activeClass="active" onClick={ () => this.setState({isOpen: false}) } className="scroll-link" to="second-component" spy={true} smooth={true} duration={500} offset={-74}>About us</Link>
+      <Link activeClass="active" onClick={ () => this.setState({isOpen: false}) } className="scroll-link" to="third-component" spy={true} smooth={true} duration={500} offset={-74}>Services</Link>
+      <Link activeClass="active" onClick={ () => this.setState({isOpen: false}) } className="scroll-link" to="fourth-component" spy={true} smooth={true} duration={500} offset={-74}>Our Consultants</Link>
+      <Link activeClass="active" onClick={ () => this.setState({isOpen: false}) } className="scroll-link" to="fifth-component" spy={true} smooth={true} duration={500} offset={-74}>Contact</Link>
       <div className="hamburger" onClick={ () => this.setState({isOpen: !this.state.isOpen}) }><img src={ menu } alt="menu"></img></div>
       </div>
       </div>
