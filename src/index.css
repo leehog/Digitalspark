@@ -4,7 +4,10 @@ html, body {
   width: 100%;
   background-color: #1E1C1C;
 }
-
+.no-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 .component {
   height: 100%;
   width: 100%;
@@ -143,27 +146,49 @@ html, body {
 /* -- -- */
 /* -- About page -- */
 .component.second-component {
-  padding: 75px 10px;
   background-color: #e1e1e1;
+  padding: 75px 10px;
 }
 .quote-text {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
+  color: #666666;
 }
+.profile-pic {
+  max-height: 200px;
+}
+.photo-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+.photo-grid:after {
+  content: "";
+  flex: auto;
+}
+
 .about-img {
   width: 100%;
 }
 .about-title-wrap {
   padding-bottom: 35px;
 }
-.about-title {
+.component.second-component .about-title {
   font-size: 44px;
-  color: #caba32;
+  color: #666666;
 }
 .about-desc {
   text-align: left;
   font-size: 18px;
 }
+@media screen and (max-width: 767px) {
+  .about-title {
+    font-size: 35px;
+  }  
+  .quote-text {
+    font-size: 25px;
+  }
+}
+
 /* -- -- */
 /* -- Services -- */
 .service-start {
@@ -193,6 +218,15 @@ html, body {
   margin: 0 auto;
   font-size: 20px;
 }
+@media screen and (max-width: 767px) {
+  .programming h1 {
+    font-size: 35px;
+  }  
+  .service-desc {
+    font-size: 17px;
+  }
+}
+
 /* -- -- */
 /* -- Jobs page -- */
 .component.third-component {
@@ -234,36 +268,18 @@ html, body {
 .component.fourth-component .quote-text {
   padding-bottom: 50px;
 }
-.card {
-  margin-top: 10px;
-  background-color: transparent !important;
-  border: none !important;
-}
-.card-block {
-  padding: 15px;
-}
-.card-deck {
-  margin: 0 auto;
-}
-.card-img-top {
-  border-radius: 100% !important;
-  max-width: 350px;
-  margin: 0 auto;
-}
-.join-us {
-  padding-top: 50px;
-}
 .tt-btn {
-  background-color: #caba32;
+  background-color: #5a9baf;
   padding: 20px 55px;
   border-radius: 45px;
   max-width: 350px;
   margin: 0 auto;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 .tt-btn:hover {
-  background-color: #E2D458;
+  background-color: #88BED0;
 }
 /* -- -- */
 /* -- Contact page -- */

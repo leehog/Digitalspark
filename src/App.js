@@ -6,9 +6,9 @@ import ServiceComponent from "./components/Services";
 import ThirdComponent from "./components/ThirdComponent";
 import FourthComponent from "./components/FourthComponent";
 import FifthComponent from "./components/FifthComponent";
-import linkedIn from './linked.png'
-import fb from './fb.png'
 import menu from './menu.png'
+
+import linkedIn from './img/linked.png'
 
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -66,17 +66,15 @@ class App extends Component {
                 <FirstComponent/>
                 <SecondComponent/>
                 <ServiceComponent/>
-                <ThirdComponent/>
                 <FourthComponent/>
                 <FifthComponent/>
         </React.Fragment>
         <div className="footer container-fluid">
         <div className="row text-center">
             <div className="col-lg-4 col-md-4 col-sm-12 footer-content">
-              <img src={ linkedIn } className="social"></img>
-              <img src={ fb } className="social"></img>
+              <a href="https://www.linkedin.com/company/digitalsparkab/" target="blank"><img src={ linkedIn } className="social"></img></a>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-12 footer-content">©DigitalSpark 2018</div>
+            <div className="col-lg-4 col-md-4 col-sm-12 footer-content">© DigitalSpark 2018 <br /> "Committed to help companies grow"</div>
             <div className="col-lg-4 col-md-4 col-sm-12 footer-content"></div>
         </div>
         </div>
